@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     display: flex;
@@ -18,6 +19,9 @@ section {
     background-color: #1795c3;
     position: relative;
     background-image: url('../Ressources/loginBackgroud.png');
+}
+.hidden{
+    display: none;
 }
 #login_image {
     width: 45vw;
@@ -93,4 +97,14 @@ button{
     padding-block: 1.4ch;
     border: none;
     border-radius: 0.5ch;
+}
+aside {
+    margin-block: 2ch;
+    border: none;
+    background-color: red;
+    color: white;
+    padding-block: 1ch;
+    padding-inline: 2ch;
+    width: max-content;
+    margin-inline: auto;
 }
