@@ -10,26 +10,28 @@ input.addEventListener('keydown', function(e) {
         if (input.value != password) {
             input.value = '';
             mail.value = '';
-            message.classList.toggle('hidden')
             button.innerText = ". . . ."
             setTimeout(() => {
-                button.innerText = "Login Now"
+                button.innerText = 'Login Now'
+                message.classList.remove('hidden')
                 setTimeout(() => {
-                    console.log('SQDF');
-                })
-                message.classList.toggle('hidden')
-            },2000)
+                    message.classList.add('nothing')
+                }, 2000)
+            }, 2000)    
         }   
     }
 })
 button.addEventListener('click', () => {
-    button.innerHTML = ". . . ."
     if (input.value != password) {
         input.value = '';
         mail.value = '';
-        message.classList.toggle('hidden')
+        button.innerText = ". . . ."
         setTimeout(() => {
-            message.classList.toggle('hidden')
-        },2000)
+            button.innerText = 'Login Now'
+            message.classList.remove('hidden')
+            setTimeout(() => {
+                message.classList.add('nothing')
+            }, 2000)
+        }, 2000)    
     }
 })
