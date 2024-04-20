@@ -4,6 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+:root {
+    --primary-color: #0d7cc6;
+    --tertiary-color: #90c2e6;
+
 }
 body {
     display: flex;
@@ -16,9 +22,13 @@ section {
     align-items: center;
 }
 #imgs {
-    background-color: #1795c3;
+    background-color: #0d7cc6;
     position: relative;
     background-image: url('../Ressources/loginBackgroud.png');
+}
+p {
+    color: #636363;
+    width: 93%;
 }
 .hidden{
     display: none;
@@ -107,4 +117,7 @@ aside {
     padding-inline: 2ch;
     width: max-content;
     margin-inline: auto;
+}
+.nothing {
+    display: none;
 }
