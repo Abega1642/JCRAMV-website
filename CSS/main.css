@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+
+:root {
+    --primary-color: #0d7cc6;
+    --secondary-color: #010101;
+    --tertiary-color: #90c2e6;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 93%;
+    margin-top: 1ch;
+    padding-block: 1ch;
+    border-radius: 8px;
+    gap: 20ch;
+    position: fixed;
+    left: 3.5vw;
+    z-index: 5;
+    background-color: #fff;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+#nav-links {
+    display: flex;
+    list-style: none;
+}
+
+#nav-links a{
+    text-decoration: none;
+    margin-inline: 2ch;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+button{
+    color: #f2f2f2;
+    background-color: var(--primary-color);
+    padding-inline: 2ch;
+    padding-block: 1ch;
+    border: none;
+    border-radius: 0.5ch;
+}
+h1 {
+    font-size: x-large;
+    color: var(--primary-color)
+}
+#logo-JCRAM {
+    height: 56px;
+    width: 56px;
+}
+header {
+    height: 100dvh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1ch;
+    border-radius: 3ch;
+}
+.left-section, .right-section {
+    flex-basis: 50%;
+    position: relative;
+}
+.left-section{
+    border-radius: 3ch 0 0 3ch;
+    background-color: #f2f2f2;
+}
+.right-section {
+    border-radius: 0 3ch 3ch 0;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+
+}
+#arrow{
+    width: 20%;
+    position: absolute;
+    top: 21%;
+    right: 15%;
+    z-index: 2;
+}
+#arrow img {
+    width: 100%;
+}
+.star{
+    position: absolute;
+    top: 22%;
+    left: 19.5%;
+    padding-block: 0.4ch;
+    width: 9.5ch;
+    border-radius: 3ch;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+    z-index: 1;
+    align-items: center;
+}
+.star div {
+    border: solid black 1px;
+    background-color: rgb(243, 117, 13);
+    width: 26px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.girl-travel-bgc{
+    background-color: var(--tertiary-color);
+    position: relative;
+    width: 60%;
+    height: 72%;    
+    margin-inline: auto;
+    margin-block-start: 10%;
+    border-radius: 50% 40% 12% 60%;
+}
+#girl-travel {
+    width: 102%;
+    margin-left: 7%;
+    z-index: 1;
+}
+#row-image{
+    border: solid aliceblue 1.6px;
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    top: 78%;
+    left: 14%;
+    z-index: 2;
+}
+#row-image img{
+    width: 70%;
+    height: 110%;
+    margin-left: 4.7ch;
+    margin-top: 0.5ch;
+}
