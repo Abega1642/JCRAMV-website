@@ -11,6 +11,7 @@
     --primary-color: #0d7cc6;
     --secondary-color: #010101;
     --tertiary-color: #90c2e6;
+    --forth-color: #c1e4fc;
 }
 
 nav {
@@ -51,6 +52,10 @@ button{
     border: none;
     font-size: large;
     border-radius: 0.5ch;
+}
+button:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 .get-started{
     color: #f2f2f2;
@@ -171,4 +176,179 @@ header {
     height: 110%;
     margin-left: 4.7ch;
     margin-top: 0.5ch;
+}
+.navbar-moove {
+    animation: nav-moove 0.5s linear;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--forth-color);
+    margin-top: 0;
+}
+.navbar-moove-back {
+    animation: nav-moove-back 0.5s linear;
+    width: 93%;
+    left: 3.5vw;
+    background-color: white;
+    margin-top: 1ch;
+}
+@keyframes nav-moove {
+    from{
+        background-color: white;
+        width: 93%;
+        left: 3.5vw;
+        margin-top: 1ch;
+    }
+    to{
+        background-color: var(--forth-color);
+        width: 100%;
+        left: 0;
+        margin-top: 0;
+    }
+}
+@keyframes nav-moove-back {
+    from{
+        background-color: var(--forth-color);
+        width: 100%;
+        left: 0;
+        margin-top: 0;
+    }
+    to{
+        background-color: white;
+        width: 93%;
+        left: 3.5vw;
+        margin-top: 1ch;
+    }
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100dvh;
+}
+.left-side, .right-side {
+    flex-basis: 50%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+.left-side {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-img {
+    margin-left: 20%;
+    width: 65%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-img img{
+    width: 150%;
+    height: fit-content;
+}
+#about1,#about2,#about3,#about4 {
+    background-size: cover;
+    background-position: 50%;
+}
+#about1 {
+    background-image: url('../Ressources/about1.jpg');
+}
+#about2 {
+    background-image: url('../Ressources/about2.jpg');
+}
+#about3 {
+    background-image: url('../Ressources/about3.jpg');
+}
+#about4 {
+    background-image: url('../Ressources/about4.jpg');
+}
+.even {
+    width: 42%;
+    height: 42%;
+    border-radius: 2ch;
+}
+.odd {
+    width: 49%;
+    height: 48%;
+    border-radius: 2ch;
+}
+.right-side {
+    justify-content: space-around;
+}
+.right-side div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    margin-inline: 3%;
+}
+.right-side h2 {
+    font-size: 2rem;
+    margin-block-end: 1ch;
+}
+.right-side p {
+    margin-block: 1ch;
+}
+.Reservation {
+    color: #f2f2f2;
+    background-color: var(--primary-color);
+    padding-inline: 2.5ch;
+    padding-block: 1.4ch;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.5ch;
+    margin-block: 2ch;
+    width: 30%;
+}
+.accumulators {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-inline: 0 !important;
+}
+.accumulators span {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: black;
+}
+.accumulators .countries {
+    width: 20% !important;
+}
+.accumulators .satisfaction, .accumulators .countries, .accumulators .experiences {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-size: 0.9rem;
+    }
+}
+.first-section {
+    transform: scale(0);
+}
+.show{
+    animation: show 2s ease-in;
+}
+@keyframes show {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: 0.3;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
