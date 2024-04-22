@@ -1,5 +1,5 @@
 const navbar = document.querySelector('nav');
-const firstSection = document.getElementById('first-section')
+const firstSection = document.getElementById('first-section');
 const frequency = document.getElementById('satisfactionNumber');
 const countryNumber = document.getElementById('countriesNumber');
 const experiences = document.getElementById('experiencesYear');
