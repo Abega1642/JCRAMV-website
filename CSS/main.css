@@ -356,6 +356,8 @@ section {
 #second-section {
     display: flex;
     flex-direction: column;
+    gap: 3ch;
+    align-items: center;
 }
 #second-section h2 {
     font-size: 2rem;
@@ -367,6 +369,8 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-inline: 5%;
+    gap: 3ch;
 }
 .cards {
     display: flex;
@@ -402,9 +406,9 @@ section {
 .titles {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 98%;
 }
+
 .transports {
     width: 100%;
     display: flex;
@@ -425,4 +429,12 @@ section {
 }
 .footer i {
     color: rgb(243, 117, 13);
+}
+.title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1ch;
+    margin-bottom: 2ch;
 }
