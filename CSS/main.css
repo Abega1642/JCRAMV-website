@@ -223,7 +223,7 @@ header {
 section {
     display: flex;
     flex-wrap: wrap;
-    height: 100dvh;
+    height: 90dvh;
 }
 .left-side, .right-side {
     flex-basis: 50%;
@@ -332,10 +332,10 @@ section {
         font-size: 0.9rem;
     }
 }
-.first-section {
+.initial-scale {
     transform: scale(0);
 }
-.show{
+.show {
     animation: show 2s ease-in;
 }
 @keyframes show {
@@ -344,7 +344,7 @@ section {
         opacity: 0;
     }
     50% {
-        transform: scale(0.5);
+        transform: scale(0.3);
         opacity: 0.3;
     }
     100%{
@@ -356,8 +356,8 @@ section {
 #second-section {
     display: flex;
     flex-direction: column;
-    gap: 3ch;
     align-items: center;
+    justify-content: space-around;
 }
 #second-section h2 {
     font-size: 2rem;
@@ -436,5 +436,89 @@ section {
     flex-direction: column;
     justify-content: space-around;
     gap: 1ch;
-    margin-bottom: 2ch;
+    margin-top: 5%;
+}
+.scale-zero {
+    transform: scale(0);
+}
+#forms {
+    margin-block: auto;
+    margin-inline: auto;
+    border-radius: 3ch;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    background-color: var(--tertiary-color);
+}
+#forms aside{
+    flex-basis: 50%;
+}
+.texts {
+    margin-inline: 1ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.second-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+}
+#reservation-bgc {
+    width: 95%;
+    height: 95%;
+    background-image: url('../Ressources/reservation.jpg');
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 2ch;
+}
+.texts h2 {
+    font-size: 3rem;
+}
+.fields {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 1ch;
+}
+.input {
+    background-color: #fff;
+    width: max-content;
+    padding-inline-start:0.5ch;
+    position: relative;
+    font-size: 100%;
+    width: 100%;
+}
+.input input {
+
+    border: transparent;
+    outline: none;
+    height: 3.4ch;
+}
+form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 3ch;
+}
+
+.fields {
+    flex-basis: 45%;
+}
+form {
+    label {
+        font-weight: bold;
+    }
+}
+#reservation-btn {
+    width: 70%;
+    margin-inline: 15%;
+    background-color: rgb(243, 117, 13);
+    color: white;
+    font-size: medium;
 }
