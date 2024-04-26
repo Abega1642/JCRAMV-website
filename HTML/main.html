@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../CSS/main.css">
     <script src="../JS/main.js" defer></script>
 </head>
+
 <body>
     <nav>
         <div class="logo-section">
@@ -16,9 +18,9 @@
         </div>
         <ul id="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Destination</a></li>
-            <li><a href="#">Hotel</a></li>
+            <li><a href="#first-section">About</a></li>
+            <li><a href="#second-section">Destination</a></li>
+            <li><a href="#third-section">Hotel</a></li>
             <li><a href="#">Reservation</a></li>
         </ul>
         <button>
@@ -49,10 +51,10 @@
                 <span>6.8</span>
             </div>
             <div id="arrow">
-                <img src="../Ressources/fleche-courbe.png" alt="arrow" >
+                <img src="../Ressources/fleche-courbe.png" alt="arrow">
             </div>
             <div class="girl-travel-bgc">
-                <img src="../Ressources/girlTravel.png" alt="girlTravel" id = "girl-travel">
+                <img src="../Ressources/girlTravel.png" alt="girlTravel" id="girl-travel">
             </div>
             <div id="row-image">
                 <img src="../Ressources/bannerBefor.jpg" alt="bannerBefore">
@@ -60,20 +62,20 @@
         </div>
     </header>
     <main>
-        <section id="first-section" class="first-section">
+        <section id="first-section" class="initial-scale">
             <div class="left-side">
                 <div class="container-img">
                     <div class="even" id="about1">
-                        
+
                     </div>
                     <div class="odd" id="about2">
-                        
+
                     </div>
                     <div class="odd" id="about3">
-                        
+
                     </div>
                     <div class="even" id="about4">
-                        
+
                     </div>
                 </div>
             </div>
@@ -93,7 +95,7 @@
                     <div class="accumulators">
                         <div class="satisfaction">
                             <span id="satisfactionNumber">
-                                99%
+                                0%
                             </span>
                             <p>
                                 of satisfied customers recommend our services
@@ -101,7 +103,7 @@
                         </div>
                         <div class="countries">
                             <span id="countriesNumber">
-                                220
+                                0
                             </span>
                             <p>
                                 countries visited annually
@@ -109,7 +111,7 @@
                         </div>
                         <div class="experiences">
                             <span id="experiencesYear">
-                                50
+                                0
                             </span>
                             <p>
                                 years of experience in the travel industry
@@ -279,6 +281,65 @@
                 </div>
             </div>
         </section>
+        <section id="third-section">
+            <div id="forms">
+                <aside class="first-part">
+                    <div class="texts">
+                        <h2>
+                            Life is short,<br>
+                            the world is wide
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. electus cumque eveniet eaque culpa error quaerat maxime!
+                        </p>
+                        <h3> Here are our reservation</h3>
+                        <form action="">
+                            <div class="fields">
+                                <label for="">Location</label>
+                                <div class="input">
+                                    <i class='fas'>&#xf1d8;</i>
+                                    <input type="text" placeholder="where are you going">
+                                </div>
+                            </div>
+                            <div class="fields">
+                                <label for="">Check-in</label>
+                                <div class="input">
+                                    <i class='fas'>&#xf274;</i>
+                                    <input type="date">
+                                </div>
+                                
+                            </div>
+                            <div class="fields">
+                                <label for="">Check-out</label>
+                                <div class="input">
+                                    <i class='fas'>&#xf274;</i>
+                                    <input type="date">
+                                </div>
+                                
+                            </div>
+                            <div class="fields">
+                                <label for="">E-mail</label>
+                                <div class="input">
+                                    <i class="fa">&#xf0e0;</i>
+                                    <input type="text">
+                                </div>
+
+                            </div>
+                            
+                        </form>
+                        <button id="reservation-btn">
+                            make reservation
+                        </button>
+                    </div>
+                </aside>
+                <aside class="second-part">
+                    <div id="reservation-bgc">
+
+                    </div>
+                </aside>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>
