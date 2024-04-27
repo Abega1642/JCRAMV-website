@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JCRAM'V</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../CSS/main.css">
     <script src="../JS/main.js" defer></script>
 </head>
@@ -121,8 +122,8 @@
                 </div>
             </div>
         </section>
-        <section id="second-section">
-            <div class="title">
+        <section id="second-section" class="initial-scale">
+            <div class="title-section">
                 <h2>
                     Top Destination
                 </h2>
@@ -132,9 +133,7 @@
             </div>
             <div class="rows">
                 <div class="cards">
-                    <div class="destinations">
-                        <img src="../Ressources/topdestination1.jpg" alt="">
-                    </div>
+                    <div class="green-square" id="destination-1"></div>
                     <div class="titles">
                         <span class="lefts">
                             <h4>Poitiers</h4>
@@ -169,9 +168,7 @@
                     </div>
                 </div>
                 <div class="cards">
-                    <div class="destinations">
-                        <img src="../Ressources/topdestination2.jpg" alt="">
-                    </div>
+                    <div class="green-square" id="destination-2"></div>
                     <div class="titles">
                         <span class="lefts">
                             <h4>Spain</h4>
@@ -206,9 +203,7 @@
                     </div>
                 </div>
                 <div class="cards">
-                    <div class="destinations">
-                        <img src="../Ressources/topdestination3.jpg" alt="">
-                    </div>
+                    <div class="green-square" id="destination-3"></div>
                     <div class="titles">
                         <span class="lefts">
                             <h4>Kenya</h4>
@@ -243,9 +238,7 @@
                     </div>
                 </div>
                 <div class="cards">
-                    <div class="destinations">
-                        <img src="../Ressources/topdestination4.jpg" alt="">
-                    </div>
+                    <div class="green-square" id="destination-4"></div>
                     <div class="titles">
                         <span class="lefts">
                             <h4>Hallstatt</h4>
@@ -281,7 +274,7 @@
                 </div>
             </div>
         </section>
-        <section id="third-section">
+        <section id="third-section" class="initial-scale">
             <div id="forms">
                 <aside class="first-part">
                     <div class="texts">
@@ -290,7 +283,8 @@
                             the world is wide
                         </h2>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. electus cumque eveniet eaque culpa error quaerat maxime!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. electus cumque eveniet eaque culpa
+                            error quaerat maxime!
                         </p>
                         <h3> Here are our reservation</h3>
                         <form action="">
@@ -307,7 +301,7 @@
                                     <i class='fas'>&#xf274;</i>
                                     <input type="date">
                                 </div>
-                                
+
                             </div>
                             <div class="fields">
                                 <label for="">Check-out</label>
@@ -315,7 +309,7 @@
                                     <i class='fas'>&#xf274;</i>
                                     <input type="date">
                                 </div>
-                                
+
                             </div>
                             <div class="fields">
                                 <label for="">E-mail</label>
@@ -325,7 +319,7 @@
                                 </div>
 
                             </div>
-                            
+
                         </form>
                         <button id="reservation-btn">
                             make reservation
@@ -339,7 +333,90 @@
                 </aside>
             </div>
         </section>
-    </main>
-</body>
+        <section id="last-section">
+            <div class="title-section">
+                <h2>
+                    Our hotel
+                </h2>
+                <p>
+                    You can see there one of our hotel destination
+                </p>
+            </div>
+            <div id="hotels">
+                <div class="type-1">
+                    <div class="htl-img-1">
 
+                    </div>
+                    <div class="htl-img-2">
+
+                    </div>
+                </div>
+                <div class="type-2">
+
+                </div>
+                <div class="type-3">
+                    <div class="htl-img-3">
+                    </div>
+                    <div class="htl-img-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="ftr-left-side">
+                <div class="logo-ftr">
+                    <img src="../Ressources/logo.png" alt="">
+                    <h1 id="lft">JCRAM</h1>
+                    <h1 id="rght">'V</h1>
+                </div>
+                <p>
+                    Explore the world with JCRAM'V and discover unforgettable experiences.
+                    From the moment you arrive, we're dedicated to make your journey extraordinary.
+                </p>
+                <div class="social-media">
+                    <div class="wht-bgc">
+                        <i class="fa">&#xf09a;</i>
+                    </div>
+                    <div class="wht-bgc">
+                        <i class="fa">&#xf232;</i>
+                    </div>
+                    <div class="wht-bgc">
+                        <i class="fa">&#xf16d;</i>
+                    </div>
+                    <div class="wht-bgc">
+                        <i class='fab'>&#xf0e1;</i>
+                    </div>
+                </div>
+            </div>
+            <div class="ftr-middle-side">
+                <h2>
+                    Contact Us
+                </h2>
+                <p>
+                    123 Rue Radama Soavimasoandro
+                </p>
+                <p>
+                    heistudent@school
+                </p>
+                <p>
+                    +261-32-45-567-67
+                </p>
+            </div>
+            <div class="ftr-right-side">
+                <h2>
+                    Sign up to new paper
+                </h2>
+                <form action="" id="ftr-frm">
+                    <input type="email" id="inpt-sent">
+                    <button id="snd">Send</button>
+                </form>
+                <div id="snt" class="snt-hd">
+                    Sent!
+                </div>
+            </div>
+        </footer>
+        <div id="copyright">
+            <p>Designed by JeanMarc RAJAONARIVELONA</p>
+        </div>
+</body>
 </html>
