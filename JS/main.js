@@ -1,10 +1,13 @@
 const navbar = document.querySelector('nav');
 const firstSection = document.getElementById('first-section');
 const secondSection = document.getElementById('second-section');
+const thirdSection = document.getElementById('third-section');
 const frequency = document.getElementById('satisfactionNumber');
 const countryNumber = document.getElementById('countriesNumber');
 const experiences = document.getElementById('experiencesYear');
-
+const sentMessage = document.getElementById('snt');
+const sentBtn = document.getElementById('snd');
+const inputSent = document.getElementById('inpt-sent')
 
 function appear(section) {
     section.classList.remove('initial-scale');
@@ -50,8 +53,10 @@ function navbarMotion() {
 
 let first = false;
 let second = false;
+let third = false;
 
 window.addEventListener('scroll', () => {
+    console.log(document.documentElement.scrollTop);
     navbarMotion();
     if (document.documentElement.scrollTop >= 240 && first == false) {
         appear(firstSection);
@@ -62,8 +67,17 @@ window.addEventListener('scroll', () => {
         countryNumber.innerText = '220';
         experiences.innerText = '50';
     }
-    if (document.documentElement.scrollTop >= 750 && second == false) {
-        secondSection.classList.add('show');
+    if (document.documentElement.scrollTop >= 860 && second == false) {
+        appear(secondSection);
         second = true;
     }
+    if(document.documentElement.scrollTop >= 1500 && third == false) {
+        appear(thirdSection);
+        third = false;
+    } 
+})
+sentBtn.addEventListener('click', () => {
+    sentMessage.classList.remove('snt-hd');
+    sentMessage.classList.add('sent');
+    inputSent.innerText = ''
 })
