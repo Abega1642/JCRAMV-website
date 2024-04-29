@@ -1,0 +1,20 @@
+@media (width: 1920px) and (height: 1080px) {
+    #plane {
+        top: 24dvh;
+    }
+}
+@media (width: 1280px) and (height: 800px) {
+    #plane {
+        top: 28.5dvh;
+    }
+}
+@media (width: 1024px) and (height: 600px) {
+    #plane {
+        top: 23.5dvh;
+    }
+}
+@media (max-width: 1000px) and (min-height: 1300px) {
+    #plane {
+        top: 10.7dvh;
+    }
+}
