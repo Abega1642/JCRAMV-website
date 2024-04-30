@@ -1,40 +1,16 @@
-@media (max-width : 999px) {
+@media (max-width:1000px) {
     body {
         flex-direction: column;
     }
-
-    #login-section,
-    #imgs {
-        width: 100%;
-        height: 100%;
+    #login-section, #imgs {
+        width: 100dvw;
+        height: 50dvh;
+        position: relative;
     }
-}
-
-@media (max-width: 899px) {
-    body {
-        #login-section,
-        #imgs {
-            flex-basis: 100dvw;
-            height: 100dvh;
-            position: relative;
-        }
+    #plane {
+        top: 23%;
     }
     .login {
-        width: 100%;
-        h1 {
-            font-size: 3rem;
-        }
-        p{
-            font-size: small;
-        }
+        width: 95dvw;
     }
-    .inputs {
-        height: 5.7ch;
-        width: 96%;
-        margin-block: 3ch;
-    }
-    button {
-        padding-inline: 1ch;
-    }
-
 }
