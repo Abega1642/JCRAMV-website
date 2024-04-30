@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/responsivity_main.css">
     <script src="../JS/main.js" defer></script>
 </head>
 
@@ -24,9 +25,12 @@
             <li><a href="#third-section">Hotel</a></li>
             <li><a href="#">Reservation</a></li>
         </ul>
-        <button>
-            Sign out
-        </button>
+        <div id="Menu_sign_out">
+            <i id="burgerMenu" class="fa">&#xf0c9;</i>
+            <button>
+                Sign out
+            </button>
+        </div>
     </nav>
     <header>
         <div class="left-section">
@@ -328,12 +332,15 @@
                 </aside>
                 <aside class="second-part">
                     <div id="reservation-bgc">
-
+                        <div id="successMessage-rsv" class="initial-scale">
+                            <i class="fa">&#xf14a;</i>
+                            <p>Reservation success</p>
+                        </div>
                     </div>
                 </aside>
             </div>
         </section>
-        <section id="last-section">
+        <section id="last-section" class="initial-scale">
             <div class="title-section">
                 <h2>
                     Our hotel
