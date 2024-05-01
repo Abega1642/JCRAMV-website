@@ -19,15 +19,18 @@
             <h1>JCRAM'V</h1>
         </div>
         <ul id="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#first-section">About</a></li>
-            <li><a href="#second-section">Destination</a></li>
-            <li><a href="#third-section">Hotel</a></li>
-            <li><a href="#">Reservation</a></li>
+            <div id="out">
+                <i class="fa">&#xf00d;</i>
+            </div>
+            <li id="home"><a href="#">Home</a></li>
+            <li id="about"><a href="#first-section">About</a></li>
+            <li id="dest"><a href="#second-section">Destination</a></li>
+            <li id="hotl"><a href="#third-section">Hotel</a></li>
+            <li id="resrv"><a href="#">Reservation</a></li>
         </ul>
         <div id="Menu_sign_out">
             <i id="burgerMenu" class="fa">&#xf0c9;</i>
-            <button>
+            <button id="sign-out">
                 Sign out
             </button>
         </div>
@@ -296,14 +299,20 @@
                                 <label for="">Location</label>
                                 <div class="input">
                                     <i class='fas'>&#xf1d8;</i>
-                                    <input type="text" placeholder="where are you going">
+                                    <input type="text" placeholder="where are you going" id="location">
+                                </div>
+                                <div id="toolTip-location" class="d-none">
+                                    <p>Please, fill out this field</p>
                                 </div>
                             </div>
                             <div class="fields">
                                 <label for="">Check-in</label>
                                 <div class="input">
                                     <i class='fas'>&#xf274;</i>
-                                    <input type="date">
+                                    <input type="date" id="check-in">
+                                </div>
+                                <div id="toolTip-check-in" class="d-none">
+                                    <p>Please, fill out this field</p>
                                 </div>
 
                             </div>
@@ -311,19 +320,24 @@
                                 <label for="">Check-out</label>
                                 <div class="input">
                                     <i class='fas'>&#xf274;</i>
-                                    <input type="date">
+                                    <input type="date" id="check-out">
                                 </div>
-
+                                <div id="toolTip-check-out" class="d-none">
+                                    <p>Please, fill out this field</p>
+                                </div>
+                                
                             </div>
                             <div class="fields">
                                 <label for="">E-mail</label>
-                                <div class="input">
+                                <div class="input" require tit>
                                     <i class="fa">&#xf0e0;</i>
-                                    <input type="text">
+                                    <input type="email" id="emailinpt">
                                 </div>
-
+                                <div id="toolTip-mail" class="d-none">
+                                    <p>Please, fill out this field</p>
+                                </div>
+                                
                             </div>
-
                         </form>
                         <button id="reservation-btn">
                             make reservation
@@ -413,7 +427,7 @@
                 <h2>
                     Sign up to new paper
                 </h2>
-                <form action="" id="ftr-frm">
+                <form id="ftr-frm">
                     <input type="email" id="inpt-sent">
                     <button id="snd">Send</button>
                 </form>
@@ -425,5 +439,7 @@
         <div id="copyright">
             <p>Designed by JeanMarc RAJAONARIVELONA</p>
         </div>
+    </main>
 </body>
+
 </html>
