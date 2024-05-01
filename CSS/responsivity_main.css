@@ -18,19 +18,64 @@
             background-color: white;
         }
     }
-
+    @keyframes slideMenu-off {
+        from {
+            left: 0;
+        }
+        to {
+            left: -100dvw;
+        }
+    }
+    @keyframes slideMenu-on {
+        from{
+            left: -100dvw;
+        }
+        to {
+            left: 0;
+        }
+    }
     .navbar-moove-back {
         width: 100%;
         left: 0;
         margin-top: 0;
     }
-
     #burgerMenu {
         display: block;
     }
-
-    li {
-        display: none;
+    .Menu-off {
+        animation: slideMenu-off 1s linear;
+        left: -100dvw;
+    }
+    .showMenu {
+        animation: slideMenu-on 1s linear;
+        left: 0;
+    }
+    #out {
+        display: block;
+        width: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #f2f2f2;
+        justify-content: space-around;
+        height: 24px;
+        border-radius: 50%;
+        background-color: orange;
+        margin-left: 93dvw;
+        margin-top: -1dvh;
+        font-size: 19px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #f2f2f2;
+        position: absolute;
+        top: 0;
+        left: -100dvw;
+        width: 100dvw;
+        height: 75dvh;
+        padding-bottom: 40dvh;
     }
 
     nav {
@@ -59,28 +104,29 @@
         align-items: center;
         gap: 3vw;
     }
-
-    header,
+    .left-section,
+    .right-section  {
+        border-radius: 0;
+    }
     section {
-        flex-direction: column-reverse;
-    }
-    header {
-        margin: 0;
+        flex-direction: column;
     }
 
-    main,
-    footer {
-        display: none;
+    header {
+        flex-direction: column-reverse;
+        margin: 0;
+        margin-top: 5dvh !important;
     }
 
     .left-side,
     .right-side {
         width: 100dvw;
     }
+
     .girl-travel-bgc {
         background-color: var(--tertiary-color);
         position: absolute;
-        top: 15%;
+        top: 5%;
         right: 5%;
         width: 90%;
         height: 82%;
@@ -88,34 +134,220 @@
         margin-block-start: 10%;
         border-radius: 50% 40% 12% 60%;
     }
-    
+    .star {
+        top: 15%;
+        left: 4%;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
     #girl-travel {
-        width: 88%;
-        margin-left: 13%;
-        margin-top: 1dvw;
+        width: 86.6%;
+        margin-left: 15%;
         z-index: 1;
     }
+    
     #arrow {
         width: 20%;
         position: absolute;
-        top: 22%;
+        top: 12%;
         right: 4%;
         z-index: 2;
     }
+
     .left-section {
         text-align: center;
+
         h2 {
-            border: solid blue 1px;
             margin-inline: auto;
             text-align: start;
             width: 60%;
             font-size: 1.5rem;
         }
+        
         p {
-            border: solid 1px green;
-            margin-inline: auto;
             width: 95%;
         }
     }
     
+    .even,
+    .odd {
+        width: 80dvw;
+        height: 50dvh;
+    }
+    
+    #first-section,
+    #second-section {
+        flex-direction: column;
+        height: max-content;
+    }
+    
+    .container-img {
+        margin-left: 0;
+        gap: 1dvh;
+        width: 100dvw;
+        margin-block: 3dvh;
+    }
+    .left-side, .right-side {
+        height: max-content;
+    }
+    .left-side {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #third-section {
+        height: max-content;
+        margin-block: 5dvh;
+    }
+    
+    #forms {
+        flex-direction: column-reverse;
+        width: 95dvw;
+        border-radius: 1ch;
+
+        .second-part {
+            flex-basis: 70dvh;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h3 {
+            margin-block: 2dvh;
+        }
+    }
+    
+    form {
+        flex-direction: column;
+    }
+    
+    .input input {
+        height: 5dvh;
+    }
+    
+    #hotels {
+        flex-direction: column;
+        gap: 0;
+        width: 100dvw;
+        
+        .type-1,
+        .type-3 {
+            width: 100dvw;
+            height: max-content !important;
+            
+            div {
+                width: 96dvw;
+                height: 65dvh;
+                margin-inline: auto;
+            }
+        }
+        
+        .type-2 {
+            width: 96dvw;
+            height: 50dvh;
+            margin-inline: auto;
+        }
+    }
+    footer {
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+    }
+    .ftr-left-side{
+        flex-basis: 40dvh;
+        p{
+            margin-inline-start: 0;
+            width: 90%;
+        }
+    }
+    .social-media {
+        margin-inline: auto;
+    }
+    .ftr-middle-side {
+        flex-basis: 20dvh;
+    }
+    .ftr-right-side {
+        justify-content: center;
+        align-items: center;
+        margin-block: 2dvh;
+        width: 100dvw !important;
+    }
+    #snt{
+        position: absolute;
+        top: -5%;
+        right: 2%;
+    }
+    .sent  {
+        width: 4rem;
+        height: 4rem;
+    }
+    #ftr-form {
+        width: 60dvw !important;
+    }
+    #reservation-btn {
+        margin-bottom: 7dvh !important;
+    }
+
+    #successMessage-rsv {
+        position: absolute;
+        bottom: -78dvh;
+        left: 23%;
+        width: fit-content;
+    }
+}
+@media (width: 412px) and (height: 915px) {
+    #girl-travel {
+        width: 88%;
+        margin-left: 14%;
+        margin-top: 0.4dvh;
+        z-index: 1;
+    }
+    
+}
+@media (width: 1960px) and (height: 1080px) {
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 80%;
+        margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 98%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 14%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
 }
