@@ -19,15 +19,20 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 93%;
+    width: 93dvw;
     margin-top: 1ch;
     padding-block: 1ch;
     border-radius: 8px;
-    gap: 20ch;
+    gap: 15dvw;
     position: fixed;
     left: 3.5vw;
     z-index: 5;
     background-color: #fff;
+}
+
+#burgerMenu {
+    font-size: 30px;
+    display: none;
 }
 
 .logo-section {
@@ -40,6 +45,10 @@ nav {
     list-style: none;
 }
 
+#out {
+    display: none;
+}
+
 #nav-links a {
     text-decoration: none;
     margin-inline: 2ch;
@@ -50,8 +59,8 @@ nav {
 button {
     color: #f2f2f2;
     background-color: var(--primary-color);
-    padding-inline: 2ch;
-    padding-block: 0.6ch;
+    padding-inline: 2dvw;
+    padding-block: 1vh;
     border: none;
     font-size: large;
     border-radius: 0.5ch;
@@ -106,7 +115,7 @@ header {
     justify-content: space-evenly;
 }
 
-.left-section h2 {
+.left-section h1 {
     width: 51%;
     font-size: 2.4rem;
     margin-top: 3ch;
@@ -179,8 +188,9 @@ header {
 }
 
 #girl-travel {
-    width: 102%;
-    margin-left: 7%;
+    width: 96%;
+    margin-left: 12%;
+    margin-bottom: 2dvh;
     z-index: 1;
 }
 
@@ -251,22 +261,28 @@ header {
 }
 
 section {
-    display: flex;
-    flex-wrap: wrap;
     height: 90dvh;
+}
+
+#first-section {
+    display: flex;
+    height: max-content;
 }
 
 .left-side,
 .right-side {
-    flex-basis: 50%;
-    position: relative;
+    width: 50dvw;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    height: 90dvh;
     position: relative;
 }
 
 .left-side {
+    width: 50dvw;
+    height: 100dvh;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -276,8 +292,8 @@ section {
 
 .container-img {
     margin-left: 20%;
-    width: 65%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -329,7 +345,7 @@ section {
     flex-direction: column;
     justify-content: space-around;
     position: relative;
-    margin-inline: 3%;
+    margin-inline: 5dvw;
 }
 
 .right-side h2 {
@@ -344,7 +360,6 @@ section {
 .Reservation {
     color: #f2f2f2;
     background-color: var(--primary-color);
-    padding-inline: 2.5ch;
     padding-block: 1.4ch;
     border: none;
     font-size: 1rem;
@@ -379,6 +394,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     p {
         font-size: 0.9rem;
@@ -411,10 +427,13 @@ section {
 }
 
 #second-section {
+    height: fit-content;
+    margin-block: 5dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5dvh;
 }
 
 #second-section h2 {
@@ -452,27 +471,32 @@ section {
     background-size: cover;
     background-position: 50%;
 }
+
 #destination-2 {
     background-image: url('../Ressources/topdestination2.jpg');
     background-size: cover;
     background-position: 50%;
 }
+
 #destination-3 {
     background-image: url('../Ressources/topdestination3.jpg');
     background-size: cover;
     background-position: 50%;
 }
+
 #destination-4 {
     background-image: url('../Ressources/topdestination4.jpg');
     background-size: cover;
     background-position: 50%;
 }
+
 .green-square {
     width: 98%;
     aspect-ratio: 1 / 0.8;
     border-radius: 8px 8px 0 0;
     margin-block-start: 1%;
 }
+
 .rights {
     display: flex;
     color: rgb(243, 117, 13);
@@ -523,18 +547,14 @@ section {
     gap: 1ch;
 }
 
-.scale-zero {
-    transform: scale(0);
-}
-
 #forms {
     margin-block: auto;
     margin-inline: auto;
     border-radius: 3ch;
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
-    height: 75%;
+    width: 75dvw;
+    height: max-content;
     display: flex;
     background-color: var(--tertiary-color);
 }
@@ -543,12 +563,42 @@ section {
     flex-basis: 50%;
 }
 
+#third-section {
+    height: fit-content;
+    display: flex;
+    margin-block: 5dvh;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .texts {
     margin-inline: 1ch;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
+}
+
+#toolTip-mail,
+#toolTip-check-out,
+#toolTip-check-in,
+#toolTip-location {
+    background-color: rgb(51, 50, 50);
+    width: fit-content;
+    padding-inline: 1dvw;
+    padding-block: 1dvh;
+    border-radius: 8px;
+    color: white;
+    font-size: small;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
 }
 
 .second-part {
@@ -566,6 +616,20 @@ section {
     background-position: 50%;
     background-size: cover;
     border-radius: 2ch;
+    position: relative;
+}
+
+.Rsrv-succes {
+    display: flex;
+    gap: 0.5ch;
+    background-color: rgba(2, 179, 2, 0.918);
+    border-radius: 8px;
+    padding-inline: 2ch;
+    padding-block: 1ch;
+    position: absolute;
+    bottom: 1ch;
+    right: 2ch;
+    color: white;
 }
 
 .texts h2 {
@@ -592,7 +656,7 @@ section {
 
     border: transparent;
     outline: none;
-    height: 3.4ch;
+    height: 4.4ch;
 }
 
 form {
@@ -613,23 +677,29 @@ form {
 }
 
 #reservation-btn {
-    width: 70%;
-    margin-inline: 15%;
+    width: 60%;
+    margin-inline: 20%;
+    margin-top: 2dvh;
+    margin-bottom: 2dvh;
     background-color: rgb(243, 117, 13);
     color: white;
     font-size: medium;
 }
+
 #last-section {
     text-align: center;
     height: max-content !important;
 }
+
 .title-section {
     margin-inline: auto;
     text-align: center;
+
     h2 {
         font-size: 2.3rem;
     }
 }
+
 #hotels {
     display: flex;
     justify-content: center;
@@ -641,10 +711,13 @@ form {
     gap: 2ch;
     margin-inline: auto;
 }
-.type-1, .type-3{
+
+.type-1,
+.type-3 {
     width: 27%;
     position: inherit;
     aspect-ratio: 1/0.7;
+
     div {
         width: 99%;
         margin-inline: 0.5%;
@@ -653,11 +726,13 @@ form {
         border-radius: 8px;
     }
 }
+
 .htl-img-1 {
     background-image: url('../Ressources/hotel1.jpg');
     background-size: cover;
     background-position: 50%;
 }
+
 .htl-img-2 {
     background-image: url('../Ressources/hotel2.jpg');
     background-size: cover;
@@ -669,11 +744,13 @@ form {
     background-size: cover;
     background-position: 50%;
 }
+
 .htl-img-4 {
     background-image: url('../Ressources/hotel4.jpg');
     background-size: cover;
     background-position: 50%;
 }
+
 .type-2 {
     width: 27%;
     aspect-ratio: 1 / 1;
@@ -687,44 +764,59 @@ footer {
     height: 40dvh;
     display: flex;
 }
-.ftr-left-side, .ftr-right-side {
+
+.ftr-left-side,
+.ftr-right-side {
     flex-basis: 40%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
     p {
         width: 59%;
         margin-inline-start: 6ch;
     }
 }
-.ftr-middle-side {
-    flex-basis: 20%;
+
+.ftr-left-side {
+    margin-left: 2rem;
 }
+
+.ftr-middle-side {
+    flex-basis: 40%;
+}
+
 #copyright {
     color: rgb(230, 220, 220);
     font-size: small;
     text-align: center;
     background-color: rgb(77, 73, 73);
+    padding-block: 1ch;
 }
 
 .logo-ftr {
     display: flex;
-    height: 6ch;
+    height: max-content;
     width: 50%;
+
     img {
         width: 25%;
+        aspect-ratio: 1 / 1;
     }
+
     #lft {
         color: white;
         font-weight: lighter;
     }
+
     #rght {
         font-weight: lighter;
         color: rgb(243, 117, 13);
     }
 }
+
 .social-media {
     display: flex;
     width: 200px;
@@ -732,6 +824,7 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+
 .wht-bgc {
     width: 32px;
     height: 28px;
@@ -742,49 +835,82 @@ footer {
     background-color: #fff;
     border-radius: 8px;
     text-align: center;
-    i{
+
+    i {
         color: rgb(0, 0, 0);
         font-size: 24px;
         font-weight: bolder;
     }
 }
-.wht-bgc:hover{
+
+.wht-bgc:hover {
     background-color: rgb(243, 117, 13);
     cursor: pointer;
 }
 
 .ftr-middle-side {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.ftr-right-side {
-    display: flex;
+    margin-block: auto;
+    height: max-content;
+    gap: 1.7rem;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
-#ftr-frm {
+
+.ftr-right-side {
     display: flex;
     position: relative;
-    justify-content: flex-start;
+    height: fit-content;
+    margin-block: auto;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#ftr-frm {
+    display: flex;
+    flex-direction: row !important;
     flex-wrap: nowrap;
+    width: 60% !important;
     gap: 0;
     width: 30ch;
-    margin-left: 3ch;
+    height: 3rem;
+
     input {
-        width: 70%;
+        width: 100%;
         outline: none;
     }
 }
+
 #snd {
     background-color: rgb(243, 117, 13);
     border-radius: 0;
     color: black;
     font-weight: bold;
+    width: fit-content !important;
     margin-inline: 0 !important;
     font-size: medium;
 }
+
 .sent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 7ch;
+    position: absolute;
+    right: 27%;
+    bottom: -65%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: rgb(30, 155, 30);
+}
+
+.snt-hd {
+    background-color: black;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -793,9 +919,5 @@ footer {
     margin-left: 45ch;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    background-color: rgb(30, 155, 30);
-}
-.snt-hd {
-    background-color: black;
-    color: black;
+    display: none;
 }
