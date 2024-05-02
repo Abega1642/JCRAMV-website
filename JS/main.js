@@ -107,36 +107,92 @@ reserv.addEventListener('click', () => {
 menu.addEventListener('click', () => {
     navLinks.classList.add('showMenu')
 })
-window.addEventListener('scroll', () => {
-    console.log(document.documentElement.scrollTop);
-    navbarMotion();
-    if (document.documentElement.scrollTop >= 200 && first == false) {
-        appear(firstSection);
-        counter(first);
-        first = true;
-    } else {
-        frequency.innerText = '99%';
-        countryNumber.innerText = '220';
-        experiences.innerText = '50';
-    }
-    if (document.documentElement.scrollTop >= 820 && second == false) {
-        appear(secondSection);
-        second = true;
-    }
-    if(document.documentElement.scrollTop >= 1500 && third == false) {
-        appear(thirdSection);
-        third = true;
-    } 
-    if(document.documentElement.scrollTop >= 1800 && last == false) {
-        appear(lastSection);
-        last= true;
-    }
-})
+if (window.innerWidth < 500 && window.innerHeight > 800) {
+    window.addEventListener('scroll', () => {
+    
+        navbarMotion();
+        if (document.documentElement.scrollTop >= 490 && first == false) {
+            appear(firstSection);
+            counter(first);
+            first = true;
+        } else {
+            frequency.innerText = '99%';
+            countryNumber.innerText = '220';
+            experiences.innerText = '50';
+        }
+        if (document.documentElement.scrollTop >= 2800 && second == false) {
+            appear(secondSection);
+            second = true;
+        }
+        if (document.documentElement.scrollTop >= 4490 && third == false) {
+            appear(thirdSection);
+            third = true;
+        }
+        if (document.documentElement.scrollTop >= 5769 && last == false) {
+            appear(lastSection);
+            last = true;
+        }
+    })
+
+} else if ((window.innerWidth > 1900 && window.innerHeight > 1000)) {
+    window.addEventListener('scroll', () => {
+    
+        navbarMotion();
+        if (document.documentElement.scrollTop >= 370 && first == false) {
+            appear(firstSection);
+            counter(first);
+            first = true;
+        } else {
+            frequency.innerText = '99%';
+            countryNumber.innerText = '220';
+            experiences.innerText = '50';
+        }
+        if (document.documentElement.scrollTop >= 820 && second == false) {
+            appear(secondSection);
+            second = true;
+        }
+        if (document.documentElement.scrollTop >= 1968 && third == false) {
+            appear(thirdSection);
+            third = true;
+        }
+        if (document.documentElement.scrollTop >= 2512 && last == false) {
+            appear(lastSection);
+            last = true;
+        }
+    })
+} else {
+    window.addEventListener('scroll', () => {
+    
+        navbarMotion();
+        if (document.documentElement.scrollTop >= 200 && first == false) {
+            appear(firstSection);
+            counter(first);
+            first = true;
+        } else {
+            frequency.innerText = '99%';
+            countryNumber.innerText = '220';
+            experiences.innerText = '50';
+        }
+        if (document.documentElement.scrollTop >= 820 && second == false) {
+            appear(secondSection);
+            second = true;
+        }
+        if (document.documentElement.scrollTop >= 1500 && third == false) {
+            appear(thirdSection);
+            third = true;
+        }
+        if (document.documentElement.scrollTop >= 1800 && last == false) {
+            appear(lastSection);
+            last = true;
+        }
+    })
+}
+
 sentBtn.addEventListener('click', () => {
-    if (inputSent.split('').includes("@") == true) {
+    if (inputSent.value.split('').includes("@") == true) {
         sentMessage.classList.remove('snt-hd');
         sentMessage.classList.add('sent');
-        inputSent.innerText = ''
+        inputSent.innerText = '';
     }
 })
 reservationBtn.addEventListener('click', () => {
@@ -158,7 +214,7 @@ reservationBtn.addEventListener('click', () => {
             temail.classList.remove('d-block');
             temail.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (locations.value != "" && checkIn.value != '' && checkOut.value == '' && emailinput.value == '') {
         setTimeout(() => {
@@ -173,7 +229,7 @@ reservationBtn.addEventListener('click', () => {
             temail.classList.remove('d-block');
             temail.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (locations.value != "" && checkIn.value == '' && checkOut.value != '' && emailinput.value == '') {
         setTimeout(() => {
@@ -188,7 +244,7 @@ reservationBtn.addEventListener('click', () => {
             temail.classList.remove('d-block');
             temail.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (locations.value != "" && checkIn.value == '' && checkOut.value == '' && emailinput.value != '') {
         setTimeout(() => {
@@ -204,7 +260,7 @@ reservationBtn.addEventListener('click', () => {
             tcheckIn.classList.add('d-none');
 
         }, 2000);
-        
+
     }
     if (locations.value == "" && checkIn.value != '' && checkOut.value != '' && emailinput.value != '') {
         setTimeout(() => {
@@ -215,7 +271,7 @@ reservationBtn.addEventListener('click', () => {
             tlocation.classList.remove('d-block');
             tlocation.classList.add('d-none');
         }, 2000);
-        
+
     }
     //  Check-In
     if (checkIn.value != "" && locations.value == '' && checkOut.value == '' && emailinput.value == '') {
@@ -235,7 +291,7 @@ reservationBtn.addEventListener('click', () => {
             temail.classList.remove('d-block');
             temail.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (checkIn.value != "" && locations.value != '' && checkOut.value == '' && emailinput.value == '') {
         setTimeout(() => {
@@ -250,7 +306,7 @@ reservationBtn.addEventListener('click', () => {
             temail.classList.remove('d-block');
             temail.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (checkIn.value != "" && locations.value == '' && checkOut.value != '' && emailinput.value == '') {
         setTimeout(() => {
@@ -265,7 +321,7 @@ reservationBtn.addEventListener('click', () => {
             tlocation.classList.remove('d-block');
             tlocation.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (checkIn.value != "" && locations.value == '' && checkOut.value == '' && emailinput.value != '') {
         setTimeout(() => {
@@ -280,7 +336,7 @@ reservationBtn.addEventListener('click', () => {
             tcheckOut.classList.remove('d-block');
             tcheckOut.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (checkIn.value == "" && locations.value != '' && checkOut.value != '' && emailinput.value != '') {
         setTimeout(() => {
@@ -291,7 +347,7 @@ reservationBtn.addEventListener('click', () => {
             tcheckIn.classList.remove('d-block');
             tcheckIn.classList.add('d-none');
         }, 2000);
-        
+
     }
     //  Check-out
     if (checkOut.value != "" && locations.value == '' && checkIn.value == '' && emailinput.value == '') {
@@ -311,7 +367,7 @@ reservationBtn.addEventListener('click', () => {
             temail.classList.remove('d-block');
             temail.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (checkOut.value != "" && locations.value != '' && checkIn.value == '' && emailinput.value == '') {
         setTimeout(() => {
@@ -326,7 +382,7 @@ reservationBtn.addEventListener('click', () => {
             temail.classList.remove('d-block');
             temail.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (checkOut.value != "" && locations.value == '' && checkIn.value != '' && emailinput.value == '') {
         setTimeout(() => {
@@ -341,7 +397,7 @@ reservationBtn.addEventListener('click', () => {
             temail.classList.remove('d-block');
             temail.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (checkOut.value != "" && locations.value == '' && checkIn.value == '' && emailinput.value != '') {
         setTimeout(() => {
@@ -356,7 +412,7 @@ reservationBtn.addEventListener('click', () => {
             tcheckIn.classList.remove('d-block');
             tcheckIn.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (checkOut.value == "" && locations.value != '' && checkIn.value != '' && emailinput.value != '') {
         setTimeout(() => {
@@ -367,7 +423,7 @@ reservationBtn.addEventListener('click', () => {
             tcheckOut.classList.remove('d-block');
             tcheckOut.classList.add('d-none');
         }, 2000);
-        
+
     }
     //  E-mail
     if (emailinput.value != "" && checkIn.value == '' && checkOut.value == '' && locations.value == '') {
@@ -387,7 +443,7 @@ reservationBtn.addEventListener('click', () => {
             tcheckOut.classList.remove('d-block');
             tcheckOut.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (emailinput.value != "" && checkIn.value != '' && checkOut.value == '' && locations.value == '') {
         setTimeout(() => {
@@ -402,7 +458,7 @@ reservationBtn.addEventListener('click', () => {
             tcheckOut.classList.remove('d-block');
             tcheckOut.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (emailinput.value != "" && checkIn.value == '' && checkOut.value != '' && locations.value == '') {
         setTimeout(() => {
@@ -417,7 +473,7 @@ reservationBtn.addEventListener('click', () => {
             tcheckIn.classList.remove('d-block');
             tcheckIn.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (emailinput.value != "" && checkIn.value == '' && checkOut.value == '' && locations.value != '') {
         setTimeout(() => {
@@ -432,7 +488,7 @@ reservationBtn.addEventListener('click', () => {
             tcheckIn.classList.remove('d-block');
             tcheckIn.classList.add('d-none');
         }, 2000);
-        
+
     }
     if (emailinput.value == "" && checkIn.value != '' && checkOut.value != '' && locations.value != '') {
         setTimeout(() => {
@@ -443,7 +499,7 @@ reservationBtn.addEventListener('click', () => {
             temail.classList.remove('d-block');
             temail.classList.add('d-none');
         }, 2000);
-        
+
     }
     // general
     if (locations.value == '' && checkIn.value == '' && checkOut.value == '' && emailinput.value == '') {
@@ -481,6 +537,6 @@ reservationBtn.addEventListener('click', () => {
             checkIn.value = '';
             checkOut.value = '';
             emailinput.value = '';
-        },2000)
+        }, 2000)
     }
 })
