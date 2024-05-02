@@ -56,10 +56,10 @@ function counter(first) {
 
         let experiencesYearInterval = setInterval(() => {
             experiences.innerText = `${experiencesYear}`;
-            if (experiencesYear == 52) {
+            if (experiencesYear == 50) {
                 clearInterval(experiencesYearInterval)
             }
-            experiencesYear += 2;
+            experiencesYear += 1;
         }, 190)
     }
 }
@@ -91,6 +91,9 @@ home.addEventListener('click', () => {
 about.addEventListener('click', () => {
     navLinks.classList.remove('showMenu')
     navLinks.classList.add('Menu-off')
+    first = false;
+    counter(first);
+    first = true;
 })
 dest.addEventListener('click', () => {
     navLinks.classList.remove('showMenu')
@@ -147,11 +150,11 @@ if (window.innerWidth < 500 && window.innerHeight > 800) {
             countryNumber.innerText = '220';
             experiences.innerText = '50';
         }
-        if (document.documentElement.scrollTop >= 820 && second == false) {
+        if (document.documentElement.scrollTop >= 1000 && second == false) {
             appear(secondSection);
             second = true;
         }
-        if (document.documentElement.scrollTop >= 1968 && third == false) {
+        if (document.documentElement.scrollTop >= 2000 && third == false) {
             appear(thirdSection);
             third = true;
         }
@@ -192,7 +195,7 @@ sentBtn.addEventListener('click', () => {
     if (inputSent.value.split('').includes("@") == true) {
         sentMessage.classList.remove('snt-hd');
         sentMessage.classList.add('sent');
-        inputSent.innerText = '';
+        inputSent.innerText = ''
     }
 })
 reservationBtn.addEventListener('click', () => {
