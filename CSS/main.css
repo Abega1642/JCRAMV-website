@@ -386,7 +386,9 @@ section {
 .accumulators .countries {
     width: 20% !important;
 }
-
+.countries {
+    margin-bottom: 2dvh;
+}
 .accumulators .satisfaction,
 .accumulators .countries,
 .accumulators .experiences {
@@ -566,7 +568,7 @@ section {
 #third-section {
     height: fit-content;
     display: flex;
-    margin-block: 5dvh;
+    margin-block: 10dvh;
     flex-direction: column;
     justify-content: center;
 }
