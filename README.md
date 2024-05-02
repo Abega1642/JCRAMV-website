@@ -8,7 +8,7 @@ The first page of this website is the login page in _``index.html``_. The user s
 
 ``Rmk :``
 
-        _(``In my case the browser screen size is 1366 * 615``)_
+        In my case the browser screen size is 1366 * 615
 
 
 Here in this website, the user account is given as follow :
