@@ -5,7 +5,12 @@ This _``WEB1``_ examination consists on recreating a  website template that was 
 
 It's about a _``travel website``_ named ``JCRAM'V``.
 The first page of this website is the login page in _``index.html``_. The user should have an account to be able to log in.
-_(``In my case the browser screen size is 1366 * 615``)_
+
+``Rmk :``
+
+        _(``In my case the browser screen size is 1366 * 615``)_
+
+
 Here in this website, the user account is given as follow :
 
     email : a.razafindratelo@gmail.com
