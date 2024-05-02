@@ -1,4 +1,4 @@
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     @keyframes nav-moove {
         from {
             background-color: white;
@@ -314,6 +314,88 @@
     }
     
 }
+@media (max-width: 1200px) and (min-width: 900px) {
+    header {
+        flex-direction: column-reverse;
+        margin: 0;
+        height: 200dvh;
+        margin-top: 5dvh !important;
+        div{
+            h2 {
+                font-size: 4rem !important;
+                width: 55% !important;
+            }
+            p {
+                margin-inline: auto;
+                font-size: large;
+                margin-block: 7dvh !important;
+            }
+        }
+    }
+
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 82%;
+        margin-inline: 5%;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+                font-size: larger !important;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+    #girl-travel {
+        width: 88%;
+        margin-left: 14%;
+        margin-top: -2dvh;
+        z-index: 1;
+    }
+}
+
 @media (width: 1960px) and (height: 1080px) {
     .girl-travel-bgc {
         background-color: var(--tertiary-color);
@@ -323,6 +405,771 @@
         width: 80%;
         height: 80%;
         margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 100%;
+        margin-left: 12%;
+        margin-top: 4dvh !important;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 9% !important;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+}
+@media (width: 1960px) and (height: 980px) {
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 80%;
+        margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 91%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+}
+@media (width: 1960px) and (min-height: 1001px) and (max-height:1019px){
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 80%;
+        margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 94%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+}
+@media (width: 1960px) and (min-height: 1019px) and (max-height:1050px){
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 80%;
+        margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 96%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+}
+@media (width: 1960px) and (min-height: 1051px) and (max-height:1079px){
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 80%;
+        margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 99%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+}
+@media (width: 1960px) and (min-height: 981px) and (max-height:1000px){
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 80%;
+        margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 92%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+}
+@media (min-width: 1880px) and (max-width: 1900px) and (min-height:980px){
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 75%;
+        margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 88%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+}
+@media (min-width: 1860px) and (max-width: 1979px) and (min-height:980px){
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 75%;
+        margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 89%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+}
+@media (min-width: 1840px) and (max-width: 11859px) and (min-height:980px){
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 75%;
+        margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 90%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+}
+@media (min-width: 1779px) and (max-width: 1839px) and (min-height:980px){
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 75%;
+        margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 93%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+}
+@media (min-width: 1739px) and (max-width: 1779px) and (min-height:980px){
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 75%;
+        margin-right: 5rem;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 95%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
+    }
+}
+@media (width: 980px) and (height: 980px) {
+
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 82%;
+        margin-inline: 5%;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    .star {
+        top: 20%;
+        left: 12%;
+        width: 12ch;
+        div {
+            width: 30px;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+    }
+    #row-image {
+        height: 20%;
+        top: 79%;
+        left: 10%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    #girl-travel {
+        width: 90%;
+        margin-left: 14%;
+        margin-top: -2dvh;
+        z-index: 1;
+    }
+}
+@media (min-width: 981px) and (max-width:1020px) and (height: 980px) {
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 82%;
+        margin-inline: 5%;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 88%;
+        margin-left: 14%;
+        margin-top: -2dvh;
+        z-index: 1;
+    }
+}
+@media (min-width: 1020px) and (max-width: 1040px) and (min-height:980px){
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 82%;
+        margin-inline: 5%;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 88%;
+        margin-left: 14%;
+        margin-top: -2dvh;
+        z-index: 1;
+    }
+}
+@media (min-width: 1201px) and (max-width:1500px) and (min-height:700px) {
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 80%;
+        height: 75%;
+        margin-right: 1rem;
         margin-block-start: 10%;
         border-radius: 50% 40% 12% 60%;
     }
@@ -374,5 +1221,228 @@
     }
     .texts {
         gap: 2dvh;
+    }
+}
+@media (max-width:400px) and (max-height:700px) {
+    header {
+        flex-direction: column-reverse !important;
+        margin: 0;
+        margin-top: 5dvh !important;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100dvw;
+    }
+
+    #girl-travel {
+        width: 87%;
+        margin-left: 12%;
+        margin-top: 0.5dvh;
+        z-index: 1;
+    }
+
+
+}
+@media (min-width: 600px) and (max-width: 700px) and (min-height: 600px) and (max-height:700px) {
+    header {
+        flex-direction: column-reverse !important;
+        margin: 0;
+        height: 200dvh;
+        margin-top: 5dvh !important;
+    }
+    .left-section,
+    .right-section  {
+        height: 100dvh;
+    }
+    .star {
+        top: 20%;
+        left: 20%;
+    }
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 70%;
+        height: 70%;
+        margin-inline:5%;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 86%;
+        margin-left: 14%;
+        margin-top: -2dvh;
+        z-index: 1;
+    }
+    #row-image {
+        height: 20%;
+        top: 70%;
+        left: 20%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+}
+@media (min-width: 600px) and (max-width: 700px) and (height: 700px) and (max-height:800px){
+    header {
+        flex-direction: column-reverse !important;
+        margin: 0;
+        height: 200dvh;
+        margin-top: 5dvh !important;
+    }
+    .left-section,
+    .right-section  {
+        height: 100dvh;
+    }
+    .star {
+        top: 20%;
+        left: 20%;
+    }
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 70%;
+        height: 70%;
+        margin-inline:5%;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 95%;
+        margin-left: 14%;
+        margin-top: -2dvh;
+        z-index: 1;
+    }
+    #row-image {
+        height: 20%;
+        top: 70%;
+        left: 20%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+}
+@media (min-width: 700px) and (max-width: 700px) and (height: 700px) and (max-height:800px){
+    header {
+        flex-direction: column-reverse !important;
+        margin: 0;
+        height: 200dvh;
+        margin-top: 5dvh !important;
+    }
+    .left-section,
+    .right-section  {
+        height: 100dvh;
+    }
+    .star {
+        top: 20%;
+        left: 20%;
+    }
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 75%;
+        height: 82%;
+        margin-inline:5%;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 90%;
+        margin-left: 18%;
+        margin-top: -2dvh;
+        z-index: 1;
+    }
+}
+@media (min-width: 800px) and (max-width: 700px) and (height: 700px) and (max-height:800px){
+    header {
+        flex-direction: column-reverse !important;
+        margin: 0;
+        height: 200dvh;
+        margin-top: 5dvh !important;
+    }
+    .left-section,
+    .right-section  {
+        height: 100dvh;
+    }
+    .star {
+        top: 20%;
+        left: 20%;
+    }
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 75%;
+        height: 82%;
+        margin-inline:5%;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 78%;
+        margin-left: 18%;
+        margin-top: -2dvh;
+        z-index: 1;
+    }
+}
+@media (min-width: 900px) and (max-width: 700px) and (height: 700px) and (max-height:800px){
+    header {
+        flex-direction: column-reverse !important;
+        margin: 0;
+        height: 200dvh;
+        margin-top: 5dvh !important;
+    }
+    .left-section,
+    .right-section  {
+        height: 100dvh;
+    }
+    .star {
+        top: 20%;
+        left: 20%;
+    }
+    .girl-travel-bgc {
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 60%;
+        height: 82%;
+        margin-inline:15%;
+        margin-block-start: 10%;
+        border-radius: 50% 40% 12% 60%;
+    }
+    #girl-travel {
+        width: 92%;
+        margin-left: 14%;
+        margin-top: -2dvh;
+        z-index: 1;
+    }
+    #row-image {
+        height: 20%;
+        top: 83%;
+        left: 15%;
+        img {
+            width: 100%;
+            height: 80%;
+            margin-left: -0.5ch;
+        }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 12%;
+        right: 16%;
+        z-index: 2;
     }
 }
