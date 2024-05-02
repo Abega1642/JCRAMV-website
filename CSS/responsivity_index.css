@@ -14,3 +14,12 @@
         width: 95dvw;
     }
 }
+@media (min-width : 1800px) {
+    p {
+        width: 71.6%;
+    }
+    .inputs {
+        width: 80%;
+        height: 5ch;
+    }
+}
