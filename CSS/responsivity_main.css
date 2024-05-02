@@ -327,18 +327,25 @@
         border-radius: 50% 40% 12% 60%;
     }
     #girl-travel {
-        width: 98%;
+        width: 100%;
         margin-left: 12%;
         margin-top: 0.5dvh;
         z-index: 1;
     }
     .star {
         top: 20%;
-        left: 14%;
+        left: 12%;
         width: 12ch;
         div {
             width: 30px;
         }
+    }
+    #arrow {
+        width: 20%;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
     }
     #row-image {
         height: 20%;
@@ -349,5 +356,23 @@
             height: 80%;
             margin-left: -0.5ch;
         }
+    }
+    .left-section {
+        flex-basis: 48.5%;
+        div{
+            h2 {
+                width: 42%;
+                font-size: 3rem;
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .right-section {
+        flex-basis: 48.5%;
+    }
+    .texts {
+        gap: 2dvh;
     }
 }
