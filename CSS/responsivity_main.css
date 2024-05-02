@@ -1632,3 +1632,9 @@
         z-index: 2;
     }
 }
+
+@media (min-width: 1700px) {
+    .rows {
+        width: 80%;
+    }
+}
